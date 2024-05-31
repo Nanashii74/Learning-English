@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnWithNanashi</title>
+
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+
+    <link rel="stylesheet" href="bing.css" />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#home" class="navbar-logo">Learn With<span>Nanashi</span></a>
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#pelajaran">Pelajaran</a>
+        <a href="#latihan">Latihan</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="https://www.youtube.com/@LearnEnglishWithTVSeries" id="youtube"
+          ><i data-feather="youtube"></i
+        ></a>
+        <a href="#" id="Menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- hero section start-->
+    <section class="hero" id="home">
+      <main class="content">
+        <a href="#" class="h1"> LearnWithNanashi </a>
+        <p>
+          Menyediakan Pelatihan Bahasa Inggris <br />
+          Disertai dengan Materi Pembelajaran
+        </p>
+        <a href="#latihan" class="cta">Mulai Latihan</a>
+      </main>
+    </section>
+    <!-- hero section end -->
+
+    <!-- about section start -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span>Kami</h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="lexscope-0k2mMcdTOYU-unsplash(2).jpg" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Kenapa Harus Belajar Bahasa inggris?</h3>
+          <p>
+            Website ini menyediakan info dan materi seputar pembelajaran Bahasa
+            Inggris dan juga pelatihan dalam vocabularry, tenses dan masih
+            banyak lagi. Disini anda akan diberi pengetahuan dengan materi yang
+            nantinya akan dipelajari, selanjutnya anda akan diberikan pelatihan
+            atau quiz tentang apa yang baru anda pelajari
+          </p>
+          <p>
+            This website provides info and materials about English learning as
+            well as training in vocabularry, tenses and more. Here you will be
+            given knowledge with the material that will be learned later, then
+            you will be given training or quiz about what you have just learned.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- pelajaran ex menu section start -->
+    <section id="pelajaran" class="menu">
+      <h2><span>Pela</span>jaran</h2>
+
+      <h3>Simple Present Tense</h3>
+      <p>
+        Simple present tense digunakan untuk menyatakan kejadian yang terjadi
+        secara rutin, umum, atau fakta yang berlaku pada waktu sekarang.
+        ADVERTISEMENT
+      </p>
+      <p>
+        Struktur: Subject + Verb (vI) + es/es <br />Contoh: I take exercise
+        daily. <br />She reads a book in the library.
+      </p>
+
+      <h3>Present Continuous Tense</h3>
+      <p>
+        Present continuous tense digunakan untuk membicarakan tindakan,
+        peristiwa, atau kondisi yang sedang berlangsung dan belum selesai.
+      </p>
+      <p>
+        Struktur: Subject + is/am/are + Verb(+ing)
+        <br />Contoh: He is playing football. <br />I am studying in a high
+        school.
+      </p>
+
+      <h3>Present Perfect Tense</h3>
+      <p>
+        Present perfect tense digunakan untuk menggambarkan situasi atau
+        peristiwa yang telah terjadi, tetapi memiliki konsekuensi langsung.
+        Bentuk present perfect tense dapat digunakan untuk mendeskripsikan
+        pengalaman dan situasi yang terjadi di masa lalu, namun masih memiliki
+        pengaruh di masa sekarang.
+      </p>
+      <p>
+        Struktur: Subject + Has/have + Verb (v3)
+
+        <br />Contoh: He has made this colorful chart. <br />I have completed my
+        assignment.
+      </p>
+
+      <h3>Present Perfect Tense</h3>
+      <p>
+        Present perfect tense digunakan untuk menggambarkan situasi atau
+        peristiwa yang telah terjadi, tetapi memiliki konsekuensi langsung.
+        Bentuk present perfect tense dapat digunakan untuk mendeskripsikan
+        pengalaman dan situasi yang terjadi di masa lalu, namun masih memiliki
+        pengaruh di masa sekarang.
+      </p>
+      <p>
+        Struktur: Subject + Has/have + Verb (v3)
+        <br />Contoh: He has made this colorful chart. <br />I have completed my
+        assignment.
+      </p>
+    </section>
+    <!-- pelajaran section end -->
+
+    <!-- latihan ex contact section start -->
+
+    <section class="hero-body has-text-centered">
+      <div class="latihan" id="latihan">
+        <div id="opening">
+          <h1>Selamat Mengerjakan</h1>
+
+          <button class="button is-white" onclick="startQUiz()">
+            Play Quiz
+          </button>
+        </div>
+        <div id="quiz" class="hidden">
+          <h1 class="is-size-2 has-text-white" id="question"></h1>
+          <br /><br /><br />
+
+          <div class="b1">
+            <button class="button is-primary is-">
+              <input type="radio" name="choices" data-id="0" id="choice0" />
+              <label
+                class="within has-background-justify has-text-white is-size-2 is-align-content-space-evenly"
+                for="choice0"
+                id="choiceText0"
+              ></label>
+            </button>
+          </div>
+
+          <div class="b2">
+            <button class="button is-danger">
+              <input type="radio" name="choices" data-id="1" id="choice1" />
+              <label
+                class="within has-background-justify has-text-white is-size-2"
+                for="choice1"
+                id="choiceText1"
+              ></label>
+            </button>
+          </div>
+
+          <div class="b3">
+            <button class="button is-warning">
+              <input type="radio" name="choices" data-id="2" id="choice2" />
+              <label
+                class="within has-background-justify has-text-white is-size-2"
+                for="choice2"
+                id="choiceText2"
+              ></label>
+            </button>
+          </div>
+
+          <div class="b4">
+            <button class="button is-link">
+              <input type="radio" name="choices" data-id="3" id="choice3" />
+              <label
+                class="within has-background-justify has-text-white is-size-2"
+                for="choice3"
+                id="choiceText3"
+              ></label>
+            </button>
+          </div>
+          <br /><br />
+
+          <button class="button is-rounded" onclick="nextQuestion()">
+            Next
+          </button>
+        </div>
+
+        <div id="closing" class="hidden">
+          <h1>Quiz Selesai</h1>
+          <h2 class="is-size-1 has-text-white" id="scoreText"></h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- latihan ex contact section end -->
+
+    <!-- footer start -->
+    <footer>
+      <div class="sosials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Pelayanan </a>
+        <a href="#contact">Kontak</a>
+      </div>
+      <div class="credit">
+        <p>created <a href="">Nanashi</a>. | &copy; 2024.</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- my js -->
+    <script src="script.js"></script>
+  </body>
+</html>
